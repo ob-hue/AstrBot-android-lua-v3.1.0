@@ -13,12 +13,7 @@
 ## 📦 快速开始
 
 1. 下载仓库内的 `AstrBot-android-lua-v3.1.0.zip`。
-2. 解压后，将 `main.lua`、`boot_services.sh`、`clean_daemon.sh` 放入 Sandbox App 的 `scripts/` 目录。
-3. 在 Sandbox 终端执行赋权命令：
-   ```bash
-   chmod +x boot_services.sh clean_daemon.sh
-```
-
+2.点击sandbox右上角设置，设置界面点击右上角载入脚本选择AstrBot-android-lua-v3.1.0即可。
 4. 刷新 App 原生界面，即可看到全新的全栈控制台。
 
 📖 详细文档
@@ -31,6 +26,12 @@
 · 本项目基于 Android 沙盒环境（DIY Sandbox）开发，需要一定的动手能力。
 · 本系统仅为个人自用折腾，如遇不同机型玄学报错，欢迎提 Issue 交流。
 
+
+### 💡 关于原项目
+
+- 本项目基于 **原版 `AstrBot-android-lua` (v0.2.1)** 进行深度二次开发与重构。
+- **特别感谢原组件包作者**：GitHub 用户 `zz6zz666` （以及最初提供看门狗思路的 `屿` 大佬）提供的底层 Lua 框架与 UI 基础。没有原作者的铺路，就没有这个全栈闭环控制台的诞生。
+- 本项目在原版基础上，主要增加了：Ollama 本地向量模型联动、全栈五灯状态监控、一键启停、Watchdog 掉线自愈、防爆盘清理以及动态模型修改等适配全栈环境的扩展功能。
 ---
 
 Powered by ob-hue (QQ@梁北陈）
