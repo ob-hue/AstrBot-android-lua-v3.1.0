@@ -1,2 +1,36 @@
 # AstrBot-android-lua-v3.1.0
-Android Diy Sandbox沙盒中，给 本地向量化模型 + AstrBot + NapCat 做全栈一键启动与后台看护。（默认为ollama）
+>Android Diy Sandbox沙盒中，给 本地向量化模型 + AstrBot + NapCat 做全栈一键启动与后台看护。（默认为ollama）
+> 全部逻辑在 App 内部闭环，告别跨应用通信的玄学报错，让手机端 AI 机器人稳如老狗。
+
+## ✨ 核心特性
+
+- 🚀 **一键启动全栈**：按 `Ollama -> NapCat -> AstrBot` 顺序自动拉起，确保依赖完全就绪，拒绝启动时序报错。
+- 🚦 **原生五灯监控**：状态卡实时显示 Ollama、AstrBot、NapCat、真实 QQ 号、链路状态，一眼看穿系统死活。
+- 🧠 **动态向量模型**：支持在 UI 上直接点击修改本地 Embedding 模型名（如 `bge-m3`），不再写死在代码里。
+- 🧹 **防爆盘清理**：内置 `clean_daemon.sh` 六道安全闸门，每两小时自动清理超期临时下载包与过期日志，绝不误删核心数据。
+- 🛡️ **60s 自动看护**：内置 Watchdog 后台定时巡检，掉线自动拉起，带降频退避机制，无惧安卓杀后台。
+
+## 📦 快速开始
+
+1. 下载仓库内的 `AstrBot-android-lua-v3.1.0.zip`。
+2. 解压后，将 `main.lua`、`boot_services.sh`、`clean_daemon.sh` 放入 Sandbox App 的 `scripts/` 目录。
+3. 在 Sandbox 终端执行赋权命令：
+   ```bash
+   chmod +x boot_services.sh clean_daemon.sh
+```
+
+4. 刷新 App 原生界面，即可看到全新的全栈控制台。
+
+📖 详细文档
+
+· 架构与详细使用说明，请查阅仓库内的 代码导读.md。
+· 本项目开发中踩过的所有血泪坑与修复方案（腾讯风控、死循环等），请务必查阅 踩坑记录.md。
+
+⚠️ 注意事项
+
+· 本项目基于 Android 沙盒环境（DIY Sandbox）开发，需要一定的动手能力。
+· 本系统仅为个人自用折腾，如遇不同机型玄学报错，欢迎提 Issue 交流。
+
+---
+
+Powered by ob-hue (QQ@梁北陈）
