@@ -1,4 +1,4 @@
-# AstrBot-android-lua-v3.1.0
+# AstrBot-android-lua-v3.1.2
 >Android Diy Sandbox沙盒中，给 本地向量化模型 + AstrBot + NapCat 做全栈一键启动与后台看护。（默认为ollama）
 > 全部逻辑在 App 内部闭环，告别跨应用通信的玄学报错，让手机端 AI 机器人稳如老狗。
 
@@ -12,7 +12,7 @@
 
 ## 📦 快速开始
 
-1. 下载仓库内的 `AstrBot-android-lua-v3.1.0.zip`。
+1. 下载仓库内的 `AstrBot-android-lua-v3.1.2.zip`。
 2.点击sandbox右上角设置，设置界面点击右上角载入脚本选择AstrBot-android-lua-v3.1.0即可。
 4. 刷新 App 原生界面，即可看到全新的全栈控制台。
 
@@ -33,5 +33,5 @@
 - **特别感谢原组件包作者**：GitHub 用户 `zz6zz666` （以及最初提供看门狗思路的 `屿` 大佬）提供的底层 Lua 框架与 UI 基础。没有原作者的铺路，就没有这个全栈闭环控制台的诞生。
 - 本项目在原版基础上，主要增加了：Ollama 本地向量模型联动、全栈五灯状态监控、一键启停、Watchdog 掉线自愈、防爆盘清理以及动态模型修改等适配全栈环境的扩展功能。
 ---
-
+V3.1.2版本修复了v3.1.0的清理脚本无法使用问题
 Powered by ob-hue (QQ@梁北陈）
